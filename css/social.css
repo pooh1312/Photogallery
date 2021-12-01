@@ -1,0 +1,148 @@
+.social-media-icons ul {
+  list-style: none;
+  position: fixed;
+  top:70%;;
+  right:0;
+  z-index:2;
+  color:#fff;
+}
+.social-media-icons ul li {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.social-media-icons ul li:last-of-type {
+  margin-bottom: 0;
+}
+.social-media-icons ul li a {
+  display: inline-block;
+  color: #EBECF2;
+  font-size: 1.4rem;
+  transform: rotate(0);
+  transition: color 0.2s ease-in-out;
+}
+.social-media-icons ul li a:hover {
+  opacity: 1;
+  transition: transform 0.5s ease-in-out;
+  color: #C2FFF9;
+  transform: rotate(360deg);
+}
+/* @media screen and (max-height:590px) and (min-width:768px)
+{
+  .social-media-icons ul li a{
+    font-size:1.5rem;
+    position: fixed;
+    bottom:2%;
+  }
+} */
+/* @media screen and (max-width: 1060px)
+{
+  .social-media-icons ul li a {
+    font-size: 1.5rem;
+
+
+  }
+  .social-media-icons ul {
+    list-style: none;
+    position: fixed;
+    bottom:20%;
+        padding:2.5px;
+  }
+} */
+@media screen and (max-width: 991px)
+{
+  .social-media-icons ul li a {
+    font-size: 4rem;
+
+  }
+  .social-media-icons ul {
+    list-style: none;
+    position: fixed;
+    bottom:20%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .social-media-icons ul li a {
+    font-size: 4rem;
+  }
+  .social-media-icons ul {
+    list-style: none;
+    position: fixed;
+    bottom:10%;
+  }
+}
+@media screen and (max-width: 655px) {
+  .social-media-icons ul li a {
+    font-size: 4rem;
+  }
+  .social-media-icons ul {
+    list-style: none;
+    position: fixed;
+    bottom:10%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .social-media-icons ul li a {
+    font-size: 4rem;
+  }
+  .social-media-icons ul {
+    list-style: none;
+    position: fixed;
+    bottom:10%;
+  }
+}
+@media screen and (max-width: 550px){
+  .social-media-icons ul li a {
+    font-size: 4rem;
+  }
+  .social-media-icons ul {
+    list-style: none;
+    position: fixed;
+    bottom:10%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .social-media-icons ul{
+    font-size: 4rem;
+  }
+  .social-media-icons ul {
+    list-style: none;
+    position: fixed;
+    bottom:10%;
+  }
+}
+@media screen and (max-width: 460px){
+  .social-media-icons ul{
+    font-size: 4rem;
+
+  }
+  .social-media-icons ul {
+    list-style: none;
+    position: fixed;
+    bottom:10%;
+  }
+  }
+
+  @media screen and (max-width: 400px){
+    .social-media-icons ul{
+      font-size: 4rem;
+
+    }
+    .social-media-icons ul {
+      list-style: none;
+      position: fixed;
+      bottom:10%;
+    }
+  }
+
+  @media screen and (max-width: 340px){
+    .social-media-icons ul{
+      font-size: 4rem;
+
+    }
+    .social-media-icons ul {
+      list-style: none;
+      position: fixed;
+      bottom:10%;
+    }
+  }

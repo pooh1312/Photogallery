@@ -1,0 +1,503 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+}
+
+.circle {
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  top: 10%;
+  margin-top:5%;
+  background-image: linear-gradient(to right, #ff41ed, #a100ff);
+  z-index: 1;
+  animation: circle_slide 2s forwards;
+  animation-timing-function: ease;
+  transform-style: preserve-3d;
+
+  animation-delay: 5s;
+}
+
+@keyframes circle_slide {
+  from {
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    z-index: 1;
+  }
+  to {
+    top: 8%;
+    left: 50%;
+    opacity: 1;
+    z-index: 1;
+  }
+}
+.mic {
+  height: 120%;
+  width: 80%;
+  position: relative;
+  top: -20%;
+  left: 10%;
+  animation: mic_anim 15s forwards infinite;
+  z-index:2;
+}
+@keyframes mic_anim {
+  20% {
+    -webkit-transform: translate(10px, -10px);
+  }
+
+  40% {
+    -webkit-transform: translate(10px, 30px);
+  }
+
+  60% {
+    -webkit-transform: translate(10px, -10px);
+  }
+
+  80% {
+    -webkit-transform: translate(10px, 30px);
+  }
+}
+
+.logo {
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+}
+
+.captions {
+  position: relative;
+  font-size: 70px;
+  margin-top: 20%;
+  color: #fff;
+  padding: 0 10% 0 10%;
+  font-family: 'Montserrat', sans-serif;
+  animation: captions_slide 5s forwards;
+  animation-timing-function: ease;
+  z-index: 3;
+  transform-style: preserve-3d;
+  margin-top: 20%;
+}
+@keyframes captions_slide {
+  from {
+    opacity: 0.5;
+    z-index: 3;
+  }
+  to {
+    opacity: 1;
+    z-index: 3;
+  }
+}
+.caption1 {
+  position: absolute;
+  left:10%;
+  top:150%;
+  z-index: 3;
+  display: inline-block;
+}
+.caption2 {
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  z-index:3;
+}
+/*
+.caption2 {
+  color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  position: absolute;
+  left:54%;
+  top:150%;
+  z-index: 3;
+  display: inline-block;
+} */
+
+
+.fab {
+  color: #fff;
+  position: relative;
+  bottom: 700%;
+  right: 10%;
+}
+
+.right-bar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 4%;
+  z-index: 2;
+  color: #fff;
+  font-family: 'Dr Sugiyama', cursive;
+  font-family: 'Stardos Stencil', cursive;
+}
+.left-bar {
+  position: fixed;
+  left: 0;
+
+  top: 0;
+  color: #fff;
+  font-family: 'Dr Sugiyama', cursive;
+  font-family: 'Stardos Stencil', cursive;
+  height: 100%;
+  width: 4%;
+  writing-mode: vertical-rl;
+  text-orientation: sideways-left;
+  z-index: 2;
+}
+.logo {
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  z-index: 2;
+  opacity: 1;
+}
+.about,
+.copyright {
+  left: 1%;
+  position: fixed;
+  margin-top: 5%;
+  z-index: 2;
+  opacity: 1;
+  color: #fff;
+}
+.about {
+  position: fixed;
+  bottom: 50%;
+}
+.copyright {
+  position: fixed;
+  bottom: 5%;
+}
+
+
+/* @media screen and (max-height:590px) and (min-width:768px)
+{
+  .left-bar{
+    font-size: 1.5rem;
+  }
+  .right-bar{
+    font-size: 1.5rem;
+  }
+
+} */
+
+/* @media screen and (max-width: 1070px) {
+
+  .circle {
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    position: relative;
+    left: 5%;
+    top: 37%;
+  }
+  .left-bar {
+    font-size: 3rem;
+  }
+  .logo {
+    position: relative;
+    left: 190%;
+    height: 120px;
+    width: 120px;
+  }
+  .caption1 {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    font-size: 8rem;
+    text-align: center;
+
+  }
+} */
+/* @media screen and (max-width: 1024px) {
+  .circle {
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 5px;
+    top: 30px;
+    margin-top:50%;
+  }
+  .left-bar {
+    font-size: 3rem;
+  }
+  .logo {
+    position: relative;
+    left: 190%;
+    height: 120px;
+    width: 120px;
+  }
+  .caption1 {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    font-size: 8rem;
+    text-align: center;
+
+  }
+} */
+
+@media screen and (max-width: 991px) {
+  .circle {
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 5%;
+    top: 37%;
+    margin-top:50%;
+  }
+  .left-bar {
+    font-size: 3rem;
+  }
+  .logo {
+    position: relative;
+    left: 190%;
+    height: 120px;
+    width: 120px;
+  }
+  .caption1 {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    font-size: 8rem;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .circle {
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 5%;
+    top: 37%;
+    margin-top:50%;
+  }
+  .left-bar {
+    font-size: 3rem;
+  }
+  .logo {
+    position: relative;
+    left: 190%;
+    height: 120px;
+    width: 120px;
+  }
+  .caption1 {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    font-size: 8rem;
+    text-align: center;
+
+  }
+}
+@media screen and (max-width: 655px) {
+  .circle {
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 5%;
+    top: 37%;
+    margin-top:50%;
+  }
+  .left-bar {
+    font-size: 3rem;
+  }
+  .logo {
+    position: relative;
+    left: 190%;
+    height: 120px;
+    width: 120px;
+  }
+  .caption1 {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    font-size: 8rem;
+    text-align: center;
+
+  }
+}
+@media screen and (max-width: 600px) {
+  .circle {
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 5%;
+    top: 37%;
+    margin-top:50%;
+  }
+  .left-bar {
+    font-size: 3rem;
+  }
+  .logo {
+    position: relative;
+    left: 190%;
+    height: 120px;
+    width: 120px;
+  }
+  .caption1 {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    font-size: 8rem;
+    text-align: center;
+
+  }
+}
+@media screen and (max-width: 550px) {
+  .circle {
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 5%;
+    top: 37%;
+    margin-top:50%;
+  }
+  .left-bar {
+    font-size: 3rem;
+  }
+  .logo {
+    position: relative;
+    left: 190%;
+    height: 120px;
+    width: 120px;
+  }
+  .caption1 {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    font-size: 8rem;
+    text-align: center;
+
+  }
+}
+@media screen and (max-width: 530px) {
+  .circle {
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 5%;
+    top: 37%;
+    margin-top:50%;
+  }
+  .left-bar {
+    font-size: 3rem;
+  }
+  .logo {
+    position: relative;
+    left: 190%;
+    height: 120px;
+    width: 120px;
+  }
+  .caption1 {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    font-size: 8rem;
+    text-align: center;
+
+  }
+}
+@media screen and (max-width: 460px) {
+  .circle {
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 5%;
+    top: 37%;
+    margin-top:50%;
+  }
+  .left-bar {
+    font-size: 3rem;
+  }
+  .logo {
+    position: relative;
+    left: 190%;
+    height: 120px;
+    width: 120px;
+  }
+  .caption1 {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    font-size: 8rem;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .circle {
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 5%;
+    top: 37%;
+    margin-top:50%;
+  }
+  .left-bar {
+    font-size: 3rem;
+  }
+  .logo {
+    position: relative;
+    left: 190%;
+    height: 120px;
+    width: 120px;
+  }
+  .caption1 {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    font-size: 8rem;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .circle {
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    left: 5%;
+    top: 37%;
+    margin-top:50%;
+  }
+  .left-bar {
+    font-size: 3rem;
+  }
+  .logo {
+    position: relative;
+    left: 190%;
+    height: 120px;
+    width: 120px;
+  }
+  .caption1 {
+    position: absolute;
+    left: 25%;
+    top: 50%;
+    font-size: 8rem;
+    text-align: center;
+
+  }
+}
